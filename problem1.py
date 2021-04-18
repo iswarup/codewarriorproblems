@@ -3,6 +3,7 @@
 
 string = input()
 
+# Creating a dictionary to keep track of number of occurences of each charachter.
 counts = {}
 
 for char in string:
@@ -14,4 +15,4 @@ for char in string:
 # print(counts)
 maxCount = max(counts, key=counts.get)
 
-print(maxCount, counts[maxCount])
+print(f"Letter '{maxCount}' occurs {counts[maxCount]} number of times.")
